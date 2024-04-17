@@ -15,6 +15,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.google.gson.Gson;
+
 @Entity
 @Table(name = "products")
 public class Product implements Serializable {
@@ -95,10 +97,11 @@ public class Product implements Serializable {
         return hash;
     }
 
-
     @Override
-    public String toString() {
-        return "com.test.telus.app.entity.Products[ id=" + id + " ]";
-    }
+	public String toString() {
+		Gson g = new Gson();
+		return g.toJson(this);
+
+	}
     
 }
