@@ -52,10 +52,10 @@
 			<artifactId>gson</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+	            <groupId>com.h2database</groupId>
+	            <artifactId>h2</artifactId>
+	            <scope>runtime</scope>
+	        </dependency>
 	</dependencies>
 
 	<build>
