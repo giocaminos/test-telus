@@ -18,7 +18,7 @@ import javax.validation.constraints.Size;
 import com.google.gson.Gson;
 
 @Entity
-@Table(name = "products")
+//@Table(name = "products")
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
